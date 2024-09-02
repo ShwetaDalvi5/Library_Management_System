@@ -1,0 +1,53 @@
+.logo{
+    text-align: center;
+    padding: 2.6rem 1 rem;
+    img{
+        width: 220px;
+    }
+}
+.mat-icon{
+    vertical-align: center;
+    margin-right: 1rem;
+    color: rgb(255, 255, 255);
+}
+.mat-divider{
+    border-top-width: 10px;
+    border-color: white;
+}
+.mat-list-item{
+    color:#868d97 !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8rem;
+    height: 44px !important;
+    margin-bottom: 0px;
+   ::ng-deep{
+        .mat-list-item-content{
+        border-radius: 5px;
+       margin:  0px;
+       &:hover{
+       background:#2c3344 !important ;
+    }
+ }
+ }
+}
+.list.item-active{
+    color: #f2f5f7 !important;
+    ::ng-deep{
+        .mat-list-item-content{
+            background: #2c4438 !important;
+            &:hover{
+                background: #2c3344 !important;
+            }
+        }
+    }
+}
+.mat-subheader{
+    color: #818cf8;
+    font-size: 0.6rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+h2{
+    color: aliceblue;
+    text-align: center;
+}

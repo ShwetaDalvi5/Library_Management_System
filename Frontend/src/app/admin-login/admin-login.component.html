@@ -1,0 +1,27 @@
+<body style="background-image: url('assets/user3.jfif'); 
+background-size: contain;
+ background-position: 305px;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  margin: 0;">
+
+  <div class="admin-login">
+    <h2 class="admin-login__title">Admin Login</h2>
+    <form class="admin-login__form" (ngSubmit)="adminLogin()">
+
+        <div class="admin-login__form-group">
+            <label class="admin-login__label" for="username">Username</label>
+            <input class="admin-login__input" type="text" id="username" [(ngModel)]="user.username" name="username" required>
+        </div>
+        <br>
+        <div class="admin-login__form-group">
+            <label class="admin-login__label" for="password">Password</label>
+            <input class="admin-login__input" type="password" id="password" [(ngModel)]="user.password" name="password" required>
+        </div>
+        <br>
+        <button class="admin-login__button" type="submit">Login</button>
+    </form>
+    </div>
+    
+</body>
+

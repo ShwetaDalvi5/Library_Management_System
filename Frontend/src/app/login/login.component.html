@@ -1,0 +1,37 @@
+<body style="background-image: url('assets/green.jpg'); 
+background-size: contain;
+ background-position: 305px;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  margin: 0;">
+
+    <div class="container">
+    <div class="content">
+    
+
+<form class="from-control" (ngSubmit)="loginMethod()">
+    <h2 class="text-center"> User Login </h2>
+
+<label class="col-form-label col-sm-3"> Username </label>
+<input class="col-sm-8" type="text" [(ngModel)]= "username" name="username" placeholder="Username">
+<br><br>
+
+<label class="col-form-label col-sm-3"> Password </label>
+<input class="col-sm-8" type="password" [(ngModel)] = "password" name="password" placeholder="password">
+<br><br>
+
+<div class="text-center"> 
+<button class="btn btn-outline-success" type="Login"> login </button>
+<a mat-list-item routerLink="/signup" routerLinkActive="item-list-active"> 
+<br>
+<button class="btn btn-link" type="SignUp">
+Don't have an account?
+</button>
+</a>
+</div>
+
+</form>
+
+</div>
+</div>
+</body>

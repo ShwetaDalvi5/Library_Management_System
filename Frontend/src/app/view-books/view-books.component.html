@@ -1,0 +1,12 @@
+<div class="books-container">
+    <div *ngFor="let book of books" class="book-card">
+      <h3>{{ book.title }}</h3>
+      <img [src]="'http://localhost:8080/api/books/image/' + book.id" alt="{{ book.title }}" class="book-image">
+      <p><strong>Author:</strong> {{ book.author }}</p>
+      <p><strong>Publisher:</strong> {{ book.publisher }}</p>
+      <p><strong>Language:</strong> {{ book.language }}</p>
+      <p><strong>Description:</strong> {{ book.discription }}</p>
+      <button (click) = "getBook(book)" *ngIf= "isUser"> Get book</button>
+    </div>
+  </div>
+  

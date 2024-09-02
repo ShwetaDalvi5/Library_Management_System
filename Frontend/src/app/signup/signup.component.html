@@ -1,0 +1,38 @@
+<body style="background-image: url('assets/signup.avif'); 
+background-size: contain;
+ background-position: 305px;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  margin: 0;">
+
+<div class="content">
+
+<form class="from-control" (ngSubmit)="signupMethod()">
+<h2 class="text-center"> Library Management Registration </h2> 
+
+<label class="col-form-label col-sm-2" > Enter Name:</label>
+<input class="col-sm-9" type="text" [(ngModel)] = "userModel.username" name = "name" placeholder="Enter Name">
+<br><br>
+
+<label class="col-form-label col-sm-2"> Enter Password: </label>
+<input class="col-sm-9" type="password" [(ngModel)] = "userModel.password" name = "password" placeholder="Enter Password">
+<br><br>
+
+<label class="col-form-label col-sm-2"> Enter Email: </label>
+<input class="col-sm-9" type="email" [(ngModel)] = "userModel.email" name = "email" placeholder="Enter Emial">
+<br><br>
+
+<label class="col-form-label col-sm-2"> Enter Contact: </label>
+<input class="col-sm-9" type="text" [(ngModel)] = "userModel.contactNo" name = "Contact" placeholder="Enter Contact">
+<br><br>
+
+<div class="text-center"> 
+<button class="bt btn-outline-success" type="SignUp"> signup</button>
+<button class="btn-outline-danger" type= "cancel"> cancel </button>
+</div>
+
+</form>
+
+
+</div>
+</body>

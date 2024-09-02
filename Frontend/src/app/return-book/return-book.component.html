@@ -1,0 +1,14 @@
+<div class="return-book-container">
+  <h2>Return a Book</h2>
+  <form [formGroup]="returnBookForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="id">Book ID:</label>
+      <input type="number" id="id" formControlName="id" required>
+    </div>
+    <div class="form-group">
+      <label for="username">User Name:</label>
+      <input type="text" id="username" formControlName="username" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Return Book</button>
+  </form>
+</div>

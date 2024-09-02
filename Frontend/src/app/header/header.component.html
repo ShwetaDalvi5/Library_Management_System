@@ -1,0 +1,25 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="toggleSidebar()"><mat-icon>menu</mat-icon></button>
+      <span class="spacer"></span>
+      <nav class="nav">
+        <ul>
+          <li *ngIf="loggedIn && !isAdmin"><a routerLink="/home">Home</a></li>
+          <li *ngIf="loggedIn && !isAdmin"><a routerLink="/view-books">View Books</a></li>
+          <li *ngIf="loggedIn && !isAdmin"><a routerLink="/user-dashboard">Issue Book</a></li>
+          <li *ngIf="loggedIn && !isAdmin"><a routerLink="/return-book">Return Book</a></li>
+          <li *ngIf="loggedIn && !isAdmin"><a routerLink="/home" (click)="logout()">Logout</a></li>
+          <li *ngIf="loggedIn && isAdmin"><a routerLink="/home">Home</a></li>
+          <li *ngIf="loggedIn && isAdmin"><a routerLink="/add-book">Add Book</a></li>
+          <li *ngIf="loggedIn && isAdmin"><a routerLink="/update-book/:id">Manage Books</a></li>
+          <li *ngIf="loggedIn && isAdmin"><a routerLink="/delete-book/:id">Delete Books</a></li>
+          <li *ngIf="loggedIn && isAdmin"><a routerLink="/view-books">View Book List</a></li>
+          <li *ngIf="loggedIn && isAdmin"><a routerLink="/home" (click)="logout()">Logout</a></li>
+          <li *ngIf="!loggedIn"><a routerLink="/home">Home</a></li>
+          <li *ngIf="!loggedIn"><a routerLink="/login">User</a></li>
+          <li *ngIf="!loggedIn"><a routerLink="/admin">Admin</a></li>
+        </ul>
+      </nav>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  

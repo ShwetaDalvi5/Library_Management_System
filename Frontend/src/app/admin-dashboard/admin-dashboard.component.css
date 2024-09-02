@@ -1,0 +1,52 @@
+/* src/app/view-books/view-books.component.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Book Card Styles */
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.book-card img.book-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Text Styles */
+.book-card p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.book-card p strong {
+  font-weight: bold;
+}

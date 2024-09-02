@@ -1,0 +1,37 @@
+mat-toolbar {
+    background-color:rgb(139, 128, 22);/* Primary color */
+    color: white;
+  }
+  
+  mat-toolbar-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav li {
+    display: inline;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
